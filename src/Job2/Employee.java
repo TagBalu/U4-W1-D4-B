@@ -1,16 +1,19 @@
-package Job;
+package Job2;
 
-public class Employee {
-    private final int serialNumber;
-    private final int salary;
-    private final Department department;
+import Job.Department;
+
+public class Employee  {
+    protected int serialNumber;
+    protected int salary;
+    protected Department department;
 
 
-    Employee (int serialNumber, int salary, Department department){
+   public Employee(int serialNumber, int salary, Job.Department department){
         this.serialNumber=serialNumber;
         this.salary=salary;
         this.department=department;
     }
+
 public int getSerialNumber(){
         return this.serialNumber;
 }
@@ -18,7 +21,7 @@ public double getSalary(){
         return this.salary;
 }
 
-public  Department department(){
+public Department department(){
         return this.department;
 }
 @Override
